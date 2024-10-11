@@ -115,6 +115,6 @@ Made By CodeWithSumit
 
 **Project Maintainer**:  
 Sumit Tak  
-- [GitHub Profile](https://github.com/yourusername)
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)
+- [GitHub Profile](https://github.com/code-with-sumit)
+- [LinkedIn](https://www.linkedin.com/in/sumit-tak-9049092b5/)
 
