@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Resources</title>
+    <title>Coding Resources | ByteMasteringHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,41 +14,59 @@
         <h1>Coding Resources <span class="typing"></span></h1>
     </header>
 
-    <section class="logo-section">
-        <div class="logo-item">
-            <a href="language/html.html">
-                <img src="assets/html.png" alt="HTML Logo">
-                <h2>HTML Resources</h2>
-            </a>
-        </div>
-        <div class="logo-item">
-            <a href="language/css.html">
-                <img src="assets/css.png" alt="CSS Logo">
-                <h2>CSS Resources</h2>
-            </a>
-        </div>
-        <div class="logo-item">
-            <a href="language/javascript.html">
-                <img src="assets/javascript.png" alt="JavaScript Logo">
-                <h2>JavaScript Resources</h2>
-            </a>
-        </div>
-        <div class="logo-item">
-            <a href="language/python.html">
-                <img src="assets/python.png" alt="Python Logo">
-                <h2>Python Resources</h2>
-            </a>
-        </div>
-        <div class="logo-item">
-            <a href="language/c.html">
-                <img src="assets/c.png" alt="C Language Logo">
-                <h2>C Language Resources</h2>
-            </a>
-        </div>
-    </section>
+    <main id="mainContent">
+        <section class="logo-section" id="logoGrid">
+            <div class="logo-item">
+                <a href="#" data-target="html-content">
+                    <img src="assets/html.png" alt="HTML Logo">
+                    <h2>HTML</h2>
+                </a>
+            </div>
+            <div class="logo-item">
+                <a href="#" data-target="css-content">
+                    <img src="assets/css.png" alt="CSS Logo">
+                    <h2>CSS</h2>
+                </a>
+            </div>
+            <div class="logo-item">
+                <a href="#" data-target="js-content">
+                    <img src="assets/javascript.png" alt="JavaScript Logo">
+                    <h2>JavaScript</h2>
+                </a>
+            </div>
+            <div class="logo-item">
+                <a href="#" data-target="python-content">
+                    <img src="assets/python.png" alt="Python Logo">
+                    <h2>Python</h2>
+                </a>
+            </div>
+            <div class="logo-item">
+                <a href="#" data-target="c-content">
+                    <img src="assets/c.png" alt="C Language Logo">
+                    <h2>C Language</h2>
+                </a>
+            </div>
+        </section>
+
+        <div id="resourceContainer"></div>
+    </main>
 
     <footer>
-        <p>Made by CodeWithSumit</p>
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Made by ByteMasteringHub. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Byte-Mastering-Hub" target="_blank" aria-label="GitHub Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="24" height="24">
+                        <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3.3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.3-6.2-10.1-27.8 2.3-57.4 0 0 21.9-7.8 71.6 26.3 20.9-6.2 43.6-9.4 66.3-9.4 22.6 0 45.4 3.1 66.3 9.4 49.6-34.1 71.6-26.3 71.6-26.3 12.4 29.6 4.6 51.2 2.3 57.4 16 17.6 23.6 31.4 23.6 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sumit-tak-9049092b5/" target="_blank" aria-label="LinkedIn Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                        <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 53.79-54.3c29.7 0 53.79 24.2 53.79 54.3a53.79 53.79 0 0 1-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
